@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-20.04-xl
     steps:
       - name: Check out repo's default branch
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
         with:
           # Picking this number is a "best guess". If we make it too large,
           # the checkout will take potentially unnecessariily long.
@@ -43,7 +43,7 @@ jobs:
 
       - uses: ./.github/actions/node-npm-setup
 
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
         with:
           token: ${{ secrets.DOCS_BOT_PAT_READPUBLICKEY }}
           repository: github/github
